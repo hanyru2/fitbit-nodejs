@@ -22,6 +22,10 @@ const client = new FitbitApiClient({
     apiVersion: '1.2' // 1.2 is the default
 });
 
+app.get("/", (req, res) => {
+    res.send("hello");
+});
+
 // redirect the user to the Fitbit authorization page
 app.get("/authorize", (req, res) => {
     // request access to the user's activity, heartrate, location, nutrion, profile, settings, sleep, social, and weight scopes
