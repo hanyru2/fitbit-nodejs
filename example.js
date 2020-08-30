@@ -12,6 +12,8 @@ var sess = {
 
 app.use(session(sess))
 
+var port = process.env.PORT || 3000
+
 // initialize the Fitbit API client
 const FitbitApiClient = require("fitbit-node");
 const client = new FitbitApiClient({
@@ -79,4 +81,4 @@ app.get("/foods", (req, res) => {
 })
 
 // launch the server
-app.listen(3000);
+app.listen(port);
