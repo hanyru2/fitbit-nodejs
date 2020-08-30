@@ -4,7 +4,7 @@
     "description": "An API client library for Fitbit written in Node.js.",
     "main": "fitbit-api-client.js",
     "scripts": {
-        "start": "nodemon node example.js",
+        "start": "node example.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
