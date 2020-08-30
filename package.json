@@ -1,0 +1,33 @@
+{
+    "name": "fitbit-node-POC",
+    "version": "2.2.0",
+    "description": "An API client library for Fitbit written in Node.js.",
+    "main": "fitbit-api-client.js",
+    "scripts": {
+        "start": "nodemon node example.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/hanyru2/fitbit-nodejs.git"
+    },
+    "keywords": [
+        "Fitbit",
+        "Node"
+    ],
+    "author": "Lukas Olson <olson.lukas@gmail.com>",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/hanyru2/fitbit-nodejs/issues"
+    },
+    "dependencies": {
+        "express-session": "^1.17.1",
+        "fitbit-node": "^2.2.0",
+        "request": "^2.83.0",
+        "simple-oauth2": "^1.5.0"
+    },
+    "devDependencies": {
+        "express": "^4.17.1"
+    },
+    "homepage": "https://github.com/hanyru2/fitbit-nodejs#readme"
+}
