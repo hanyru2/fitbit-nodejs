@@ -5,7 +5,7 @@
     "main": "fitbit-api-client.js",
     "scripts": {
         "dev": "node example.js",
-        "start": "NODE_ENV=production node example.js",
+        "start": "node server.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
