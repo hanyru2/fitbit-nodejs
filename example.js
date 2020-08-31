@@ -18,7 +18,7 @@ var port = process.env.PORT || 3000
 const FitbitApiClient = require("fitbit-node");
 const client = new FitbitApiClient({
     clientId: "22BRPR",
-    clientSecret: "b5c8d1d75675c65f4b6078f80df105ac",
+    clientSecret: "cb2413487adc06f98ff1eb3c03968729",
     apiVersion: '1.2' // 1.2 is the default
 });
 
