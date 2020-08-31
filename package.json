@@ -1,5 +1,5 @@
 {
-    "name": "fitbit-node-POC",
+    "name": "fitbitnode",
     "version": "2.2.0",
     "description": "An API client library for Fitbit written in Node.js.",
     "main": "fitbit-api-client.js",
