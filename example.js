@@ -29,13 +29,13 @@ app.get("/", (req, res) => {
 // redirect the user to the Fitbit authorization page
 app.get("/authorize", (req, res) => {
     // request access to the user's activity, heartrate, location, nutrion, profile, settings, sleep, social, and weight scopes
-    res.redirect(client.getAuthorizeUrl('activity heartrate location nutrition profile settings sleep social weight', 'http://localhost:3000/callback'));
+    res.redirect(client.getAuthorizeUrl('activity heartrate location nutrition profile settings sleep social weight', process.env.HOST + '/callback'));
 });
 
 // handle the callback from the Fitbit authorization flow
 app.get("/callback", (req, res) => {
     // exchange the authorization code we just received for an access token
-    client.getAccessToken(req.query.code, 'http://localhost:3000/callback').then(result => {
+    client.getAccessToken(req.query.code, process.env.HOST + '/callback').then(result => {
         if (typeof result.access_token != "undefined") {
             // req.session.sess.token = result.access_token;
             sess.token = result.access_token;
